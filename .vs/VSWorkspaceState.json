@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Estacionamento MVC",
+    "\\Estacionamento MVC\\Models"
   ],
-  "SelectedNode": "\\Estacionamento MVC.sln",
+  "SelectedNode": "\\Estacionamento MVC\\Models\\Propietario.cs",
   "PreviewInSolutionExplorer": false
 }
