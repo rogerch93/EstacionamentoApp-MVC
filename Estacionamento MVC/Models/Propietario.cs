@@ -28,8 +28,9 @@ namespace Estacionamento_MVC.Models
         [DataType(DataType.Time)]
         [Display(Name ="Saida")]
         public string HoraSaida { get; set; }
-        [Column(TypeName ="decimal(18,2)")]
-        public double Total { get; set; }
+        
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:c}")]
+        public decimal Total { get; set; }
         public bool Pago { get; set; }
     }
 }
