@@ -4,12 +4,16 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Estacionamento_MVC.Data;
 using Estacionamento_MVC.Models;
+using System;
+
+
 
 namespace Estacionamento_MVC
 {
     public class PropietariosController : Controller
     {
         private readonly Estacionamento_MVCContext _context;
+        
 
         public PropietariosController(Estacionamento_MVCContext context)
         {
@@ -17,9 +21,17 @@ namespace Estacionamento_MVC
         }
 
         // GET: Propietarios
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Propietario.ToListAsync());
+            var proprietario = from m in _context.Propietario
+                               select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                proprietario = proprietario.Where(p => p.NomePessoa.Contains(searchString));
+            }
+
+            return View(await proprietario.ToListAsync());
         }
 
         // GET: Propietarios/Details/5

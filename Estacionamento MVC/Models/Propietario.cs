@@ -13,7 +13,7 @@ namespace Estacionamento_MVC.Models
         [StringLength(8)]
         public string Placa { get; set; }
 
-        [Display(Name = "Proprietario")]
+        [Display(Name = "Proprietário")]
         [StringLength(250)]
         public string NomePessoa { get; set; }
         [StringLength(11)]

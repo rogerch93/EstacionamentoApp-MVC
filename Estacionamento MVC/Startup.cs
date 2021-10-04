@@ -62,6 +62,7 @@ namespace Estacionamento_MVC
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
         }
     }
 }

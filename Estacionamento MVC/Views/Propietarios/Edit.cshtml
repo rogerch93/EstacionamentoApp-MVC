@@ -55,12 +55,12 @@
             </div>
             <div class="form-group">
                 <label asp-for="HoraEntrada" class="control-label"></label>
-                <input asp-for="HoraEntrada" class="form-control" />
+                <input asp-for="HoraEntrada" id="Entrada" class="form-control" />
                 <span asp-validation-for="HoraEntrada" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="HoraSaida" class="control-label"></label>
-                <input asp-for="HoraSaida" class="form-control" />
+                <input asp-for="HoraSaida" id="Saida" class="form-control" />
                 <span asp-validation-for="HoraSaida" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -74,8 +74,23 @@
                 </label>
             </div>
             <div class="form-group">
-                <input type="submit" value="Savar" class="btn btn-primary" />
+                <input id="Salvar" type="submit" value="Savar" class="btn btn-primary" />
             </div>
+
+            @section ScriptCode { 
+                <script>
+                    $('#Salvar').click(function () {
+                        let ent = parseFloat(document.getElementById('Entrada').value)
+                        let sai = parseFloat(document.getElementById('Saida').value)
+                        let soma = ent + sai;
+                        let total = soma * 5 - 100
+                        alert("Caso o cliente fique ao todo 01:40:00 no estacionamento, cobrar valor de mais uma hora.")
+                        alert("O valor total do tempo em que o cliente utilizou o estacionamento ficou R$" + total+",00");
+                                      
+                    });
+                </script>
+            }
+
         </form>
     </div>
 </div>
