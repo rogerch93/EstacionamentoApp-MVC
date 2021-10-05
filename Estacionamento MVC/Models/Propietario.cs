@@ -16,6 +16,7 @@ namespace Estacionamento_MVC.Models
         [Display(Name = "Proprietário")]
         [StringLength(250)]
         public string NomePessoa { get; set; }
+        [Required]
         [StringLength(11)]
         public string CPF { get; set; }
         [Display(Name ="Vaga")]
