@@ -41,7 +41,7 @@ namespace Estacionamento_MVC.Models
         [DataType(DataType.Time)]
         public string HoraEntrada { get; set; }
 
-        [Required]
+        
         [DataType(DataType.Time)]
         [Display(Name ="Saida")]
         public string HoraSaida { get; set; }

@@ -6,10 +6,11 @@
     <title>@ViewData["Title"] - EveryDay Car</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/StyleSheet.css" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark  box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Propietarios" asp-action="Index">Lista de Clientes</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -20,9 +21,6 @@
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Gestão</a>
                         </li>
                     </ul>
                 </div>
@@ -35,9 +33,9 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted bg-dark">
+    <footer class="footer text-muted">
         <div class="container text-center text-white">
-            &copy; 2021 - EveryDay Car
+            &copy; 2021 - RogerDevWeb Solutions.
         </div>
     </footer>
 
@@ -46,7 +44,7 @@
     <script src="~/js/calc.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
-    
+
 
 </body>
 </html>

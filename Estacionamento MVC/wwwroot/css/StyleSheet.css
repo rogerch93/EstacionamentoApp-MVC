@@ -1,0 +1,75 @@
+﻿
+
+/*Estilização da HOME*/
+
+nav {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(29,27,105,1) 20%, rgba(77,50,149,0.9836309523809523) 82%);
+}
+
+#titulo {
+    padding: 1em;
+    color: #ffffff;
+}
+
+#texto {
+    padding: 1em;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, .05);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(29,27,105,1) 20%, rgba(77,50,149,0.9836309523809523) 82%);
+}
+
+body {
+    background: #000000
+}
+
+img{
+    height:500px;
+    border-radius:15px;
+}
+
+.card {
+    margin: 30px;
+    height: 150px;
+    border: 1px solid;
+    border-image: linear-gradient(227.91deg, #4d3295 0%, #1d1b69 100%) 1;
+}
+
+/*Estilizãção da INDEX(LISTA)*/
+
+th,td{
+    color:#ffff;
+}
+
+.Icon{
+    margin: 5px;
+}
+/*Estilização EDIT,DETAILS*/
+dt,dd{
+    color: #ffff;
+}
+
+label{
+    color: #ffff;
+}
+
+
+
+
+
+footer {
+    background: rgb(77,50,149);
+    background: linear-gradient(0deg, rgba(77,50,149,0.9836309523809523) 18%, rgba(29,27,105,1) 73%, rgba(0,0,0,1) 100%);
+}
+

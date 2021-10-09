@@ -1,9 +1,48 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
+<link rel="stylesheet" href="~/css/site.css" />
 <div class="text-center">
-    <h3 id="titulo" class="display-4"><strong>Seja bem vindo ao EveryDay Car - Sistema para estacionamento de carros.</strong></h3>
-    <img id="car" src="~/img/car-race-geec41e643_1920.jpg" class="img-fluid" alt="...">
-    <h4 id="texto">Com o sistema de gerenciamento de estacionamento fica mais fácill para controlar seu dia dia no estabelecimento. </h4>
+    <h2 id="titulo" >Seja bem vindo a EveryDay Car.</h2>
+    <div class="container-fluid">
+        <div id="mainSlider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+                <li data-target="#mainSlider" data-slide-to="1"></li>
+                <li data-target="#mainSlider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="~/img/city-g703187ef5_1280.jpg" class="d-block w-100" alt="" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Você confia em deixar seu veiculo na rua ?</h2>
+                        <p>Não corra o risco deixe ele em segurança em nosso pátio</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="~/img/city-g773508abe_1280.jpg" class="d-block w-100" alt="" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Deixando na rua você arca com 100% dos ricos</h2>
+                        <p>Bem como sabemos não é só o risco de furto que você corre ao deixar seu veículo na rua<br/>
+                        existem batidas... danos superficiais na lataria... e por ai vai.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="~/img/porsche-g5acf00eff_1920.jpg" class="d-block w-100" alt="" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>EveryDay Car</h2>
+                        <p>Com a gente seu veículo fica 100% protegido, assumimos todos os riscos! </p>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+       
+    <div class="card bg-transparent  text-white">
+        <div class="card-img-overlay">
+            <h5 class="card-title">Furtos em nossa região</h5>
+            <p class="card-text">Sabia que na nossa região registrou 29,0% de casos de veículos furtados? isso equivale 129 mil furtos de veículos</p>
+            <p class="card-text">Muita coisa né ? não corra esse risco conte com a gente! deixe seu veiculo estacionado em seguança aqui no nosso pátio.</p>
+        </div>
+    </div>
 </div>
