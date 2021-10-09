@@ -3,6 +3,7 @@
 /*Estilização da HOME*/
 
 nav {
+    max-width:100%;
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(29,27,105,1) 20%, rgba(77,50,149,0.9836309523809523) 82%);
 }
@@ -46,6 +47,8 @@ img{
     border-image: linear-gradient(227.91deg, #4d3295 0%, #1d1b69 100%) 1;
 }
 
+
+
 /*Estilizãção da INDEX(LISTA)*/
 
 th,td{
@@ -64,12 +67,24 @@ label{
     color: #ffff;
 }
 
-
-
-
-
 footer {
+    max-width:100%;
     background: rgb(77,50,149);
     background: linear-gradient(0deg, rgba(77,50,149,0.9836309523809523) 18%, rgba(29,27,105,1) 73%, rgba(0,0,0,1) 100%);
 }
 
+/*responsivo celulares - media query*/
+@media(max-width: 500px){
+   /*geral*/
+ img{
+     width: 100%;
+     height:150px;
+ }
+
+ td, th{
+     padding: 10px;
+ }
+.CARD{
+    padding-bottom:250px;
+}
+}
